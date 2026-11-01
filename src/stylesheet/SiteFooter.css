@@ -1,0 +1,26 @@
+.site-footer { color: #f7f5ed; background: #123a35; }
+.footer-main { display: grid; grid-template-columns: 1.2fr 1fr auto; align-items: center; gap: 1.15rem 3rem; max-width: 1170px; margin: 0 auto; padding: 3rem 1.5rem 2.4rem; }
+.footer-school { display: flex; align-items: center; gap: .8rem; }
+.footer-school img { width: 48px; height: 48px; object-fit: cover; border-radius: 50%; border: 2px solid rgba(255,255,255,.6); }
+.footer-school div { display: flex; flex-direction: column; gap: .2rem; }
+.footer-school strong { color: white; font-family: Georgia, serif; font-size: 1.1rem; font-weight: 500; }
+.footer-school span, .footer-note { color: rgba(255,255,255,.68); font-size: .8rem; }
+.footer-note { grid-column: 1; margin: 0; }
+.footer-links { display: grid; grid-template-columns: repeat(2, max-content); gap: .65rem 1.5rem; grid-column: 2; grid-row: 1 / span 2; }
+.footer-links a, .footer-bottom button { color: rgba(255,255,255,.8); text-decoration: none; font-size: .82rem; }
+.footer-links a:hover, .footer-bottom button:hover { color: #e8c576; }
+.footer-bottom button { padding: 0; border: 0; background: transparent; cursor: pointer; }
+.footer-location { display: inline-flex; align-items: center; gap: .55rem; grid-column: 3; grid-row: 1 / span 2; color: #e8c576; text-decoration: none; font-size: .8rem; font-weight: 700; white-space: nowrap; }
+.footer-location svg:last-child { margin-left: .2rem; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1rem; max-width: 1170px; margin: 0 auto; padding: 1rem 1.5rem; border-top: 1px solid rgba(255,255,255,.16); color: rgba(255,255,255,.58); font-size: .76rem; }
+@media (max-width: 780px) {
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 1rem 2rem; }
+  .footer-links { grid-column: 2; grid-row: 1 / span 2; }
+  .footer-location { grid-column: 1 / -1; grid-row: auto; }
+}
+@media (max-width: 520px) {
+  .footer-main { grid-template-columns: 1fr; padding: 2.5rem 1.25rem 1.8rem; }
+  .footer-links, .footer-note, .footer-location { grid-column: 1; grid-row: auto; }
+  .footer-links { grid-template-columns: repeat(2, 1fr); }
+  .footer-bottom { padding: 1rem 1.25rem; align-items: flex-start; flex-direction: column; }
+}

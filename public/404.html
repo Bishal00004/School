@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading school page…</title>
+    <script>
+      const routes = new Set(['academics', 'admissions', 'notice-events', 'about', 'facilities', 'contact']);
+      const pathParts = window.location.pathname.split('/').filter(Boolean);
+      const isAppRoute = routes.has(pathParts[0]);
+      const isProjectPagePath = !isAppRoute && pathParts.length > 1;
+      const base = isProjectPagePath ? `/${pathParts[0]}/` : '/';
+      const routeWithQuery = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+      window.location.replace(`${base}?p=${encodeURIComponent(routeWithQuery)}`);
+    </script>
+  </head>
+  <body></body>
+</html>

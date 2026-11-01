@@ -1,0 +1,253 @@
+/* Container */
+.about-container {
+  width: 100%;
+  color: #f8fafc;
+  background-color: #0b0f19;
+  min-height: 100vh;
+}
+
+/* Hero Banner */
+.about-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-hero-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Principal Section */
+.principal-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 3rem;
+}
+
+.principal-card-glass {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 20px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  align-items: center;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 868px) {
+  .principal-card-glass {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.principal-avatar-placeholder {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #3b82f6;
+}
+
+.principal-text-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.quote-text {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.principal-signature {
+  display: flex;
+  flex-direction: column;
+}
+
+.principal-signature strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.principal-signature span {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* Vision & Mission */
+.vision-mission-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.vision-card {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.vision-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.vision-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Milestones / Timeline */
+.milestones-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2rem;
+  border-left: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -3.35rem;
+  top: 0;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.timeline-content {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Core Values Section */
+.values-section {
+  background: #0f172a;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 5rem 1.5rem;
+}
+
+.values-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  display: flex;
+  gap: 1rem;
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.75rem;
+  border-radius: 12px;
+}
+
+.check-icon {
+  color: #3b82f6;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.value-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.value-card p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
